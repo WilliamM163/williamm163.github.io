@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&family=Ubuntu+Condensed&family=Ubuntu+Mono');
+
+* {
+    font-family: 'Ubuntu';
+    margin: 0;
+    /* border: 1px solid #5b7fb9; */
+    line-height: 1.5;
+    /* box-sizing: content-box; */
+}
+
+body {
+    background-color: #ffffff;
+}
+
+header h1 {
+    font-family: 'Ubuntu Condensed';
+    background-color: #5b7fb9;
+    color: white;
+    text-align: center;
+}
+
+main {
+    margin: 20px auto;
+    text-align: center;
+}
+
+main div {
+    text-align: left;
+    display: inline-block;
+    vertical-align: top;
+    width: 300px;
+    padding: 5px;
+    margin: 10px 10px;
+    border: 2px solid #c0bbe2;
+    border-radius: 20px;
+    height: 450px;
+}
+
+main h2 {
+    font-family: 'Ubuntu Condensed';
+    text-align: center;
+}
+
+main strong {
+    font-size: 18px;
+    font-family: 'Ubuntu Condensed';
+    padding-top: 20px !important;
+}
+
+main em {
+    font-family: 'Ubuntu Mono';
+    font-size: small;
+    color: grey;
+}
+
+main img {
+    height: 300px;
+    width: 150px;
+}
+
+footer {
+    background-color: #3f8992;
+    color: #ffffff;
+}
+
+footer ul {
+    width: 100%;
+    text-align: center;
+}
+
+footer li {
+    display: inline-block;
+    margin: 5px 50px 5px 0;
+}
+
+/* --text: #000000;
+--background: #ffffff;
+--primary: #5b7fb9;
+--secondary: #c0bbe2;
+--accent: #3f8992;
+*/
