@@ -18,17 +18,32 @@
             <li><a href="#aboutme">About Me</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#skills">Skills</a></li>
-            <li><a href="">Contact</a></li>
+            <li><a data-modal-target="#modal">Contact</a></li>
         </ul>
     </header>
     <main>
+        <!-- Contact Modal -->
+        <div class="modal" id="modal">
+            <div class="modal-header">
+                <div class="title">Contact Me</div>
+                <button data-close-button class="close-button">&times;</button>
+            </div>
+            <div class="modal-body">
+                <ul>
+                    <li>Instagram: <a href="https://www.instagram.com/williamm_1603/">williamm_1603</a></li>
+                    <li>Github: <a href="https://github.com/WilliamM163">WilliamM163</a></li>
+                    <li>Email: <a href="mailto:william.massey.163@gmail.com">william.massey.163@gmail.com</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="overlay"></div>
         <!-- About Me -->
         <div id="aboutme">
             <h2>About Me</h2>
             <p>
                 My name is William Massey, and I'm a passionate Computer Science student at the University of Auckland.
                 While I'm diving deep into the world of algorithms and data structures, I'm also fueling my fascination
-                with building things by learning Full Stack Development on the side.  I'm particularly interested in
+                with building things by learning Full Stack Development on the side. I'm particularly interested in
                 HTML, CSS, JS, and Flutter mobile App development.
             </p>
             <p>
@@ -38,11 +53,12 @@
             </p>
             <p>
                 When I'm not coding, I enjoy playing hockey, going to the gym, and watching a good TV series on Netflix.
-                I believe a well-rounded life fuels creativity and problem-solving, which are essential in the tech world!
+                I believe a well-rounded life fuels creativity and problem-solving, which are essential in the tech
+                world!
             </p>
         </div>
         <!-- Projects -->
-        
+        <div id="projects">
             <div id="description">
                 <h2>Projects</h2>
                 <p>A Wellbeing App</p>
@@ -81,7 +97,7 @@
                 </div>
 
             </div>
-        
+        </div>
         <!-- Skills -->
         <div id="skills">
             <h2>Skills</h2>
@@ -106,9 +122,7 @@
         </div>
 
     </main>
-    <footer>
-
-    </footer>
+    <script src="./main.js"></script>
 </body>
 
 </html>
