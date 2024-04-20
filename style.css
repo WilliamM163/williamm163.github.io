@@ -6,6 +6,10 @@
     font-style: normal;
 }
 
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
 /* Header */
 header {
@@ -33,11 +37,16 @@ header h2 {
 
 header ul {
     display: flex;
+    padding-inline-start: 0;
 }
 
 header ul li {
     list-style: none;
     padding-left: 15px;
+}
+
+header ul li:first-child {
+    padding-left: 0;
 }
 
 /* Projects */
@@ -47,7 +56,7 @@ main {
 
 #projects {
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 35% 65%;
 }
 
 #description {
@@ -87,4 +96,15 @@ main {
 #skills img {
     height: 100px;
     width: 100px;
+}
+
+
+/* Responsive Design */
+@media only screen and (max-width: 700px) {
+    header {
+        align-items: start;
+        flex-direction: column;
+    }
+    
+    
 }
