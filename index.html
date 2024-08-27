@@ -4,125 +4,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Website of William Massey</title>
-    <link rel="stylesheet" href="./style.css">
+    <title>William's Portfolio</title>
+    <link rel="stylesheet" href="./styles/body.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/main.css">
 </head>
 
 <body>
     <header>
-        <div id="william">
-            <img src="./media/profile_pic.jpg" alt="image of William">
-            <h2>William Massey</h2>
+        <div class="profile" alt="Profile Pic and Name">
+            <img class="pic" src="./media/profile_pic.jpg" />
+            <img class="name" src="./media/name.svg" />
         </div>
-        <ul>
-            <li><a href="#aboutme">About Me</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a data-modal-target="#modal">Contact</a></li>
-        </ul>
+        <div class="navigation" alt="navigation">
+            <a href="#aboutme">About Me</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact-me">Contact Me</a>
+        </div>
     </header>
-    <main>
-        <!-- Contact Modal -->
-        <div class="modal" id="modal">
-            <div class="modal-header">
-                <div class="title">Contact Me</div>
-                <button data-close-button class="close-button">&times;</button>
-            </div>
-            <div class="modal-body">
-                <ul>
-                    <li>Instagram: <a href="https://www.instagram.com/williamm_1603/">williamm_1603</a></li>
-                    <li>Github: <a href="https://github.com/WilliamM163">WilliamM163</a></li>
-                    <li>Email: <a href="mailto:william.massey.163@gmail.com">william.massey.163@gmail.com</a></li>
-                </ul>
-            </div>
-        </div>
-        <div id="overlay"></div>
-        <!-- About Me -->
-        <div id="aboutme">
-            <h2>About Me</h2>
-            <p>
-                My name is William Massey, and I'm a passionate Computer Science student at the University of Auckland.
-                While I'm diving deep into the world of algorithms and data structures, I'm also fueling my fascination
-                with building things by learning Full Stack Development on the side. I'm particularly interested in
-                HTML, CSS, JS, and Flutter mobile App development.
-            </p>
-            <p>
-                Beyond academics, I recently developed a Wellbeing App focused on measuring student wellbeing.
-                This project helped me explore the intersection of technology and mental health, and it was
-                incredibly rewarding to see it in use, and to see its impact on the people around me.
-            </p>
-            <p>
-                When I'm not coding, I enjoy playing hockey, going to the gym, and watching a good TV series on Netflix.
-                I believe a well-rounded life fuels creativity and problem-solving, which are essential in the tech
-                world!
-            </p>
-        </div>
-        <!-- Projects -->
-        <div id="projects">
-            <div id="description">
-                <h2>Projects</h2>
-                <p>A Wellbeing App</p>
-                <ul>
-                    <li>
-                        This app focused on measuring a students wellbeing based on
-                        subjective parameters.
-                    </li>
-                    <li>
-                        A teacher would then use this information to gauge a students wellbeing
-                        and use this information in future conversation. This makes talking about
-                        ones wellbeing easier.
-                    </li>
-                    <li>
-                        Here are some images below, to show an example of what the app looked like,
-                        and how a user would use it.
-                    </li>
-                </ul>
-            </div>
-            <div id="galary">
-                <div class="student_home screen">
-                    <img src="./media/App Screens/Student Homescreen.png">
-                    <p>Student Home Screen</p>
-                </div>
-                <div class="quick_links screen">
-                    <img src="./media/App Screens/Quick links.png">
-                    <p>Quick Links Screen</p>
-                </div>
-                <div class="agenda screen">
-                    <img src="./media/App Screens/Agenda.png">
-                    <p>Agenda Screen</p>
-                </div>
-                <div class="teacher_home screen">
-                    <img src="./media/App Screens/Teacher Homescreen.png">
-                    <p>Teacher Home Screen</p>
-                </div>
 
+    <main>
+        <div class="aboutme">
+            <h1 id="aboutme">About Me</h1>
+            <div class="info">
+                <div class="text">
+                    <p>
+                        My name is William Massey, and I'm a passionate Computer Science student at the University of
+                        Auckland. While I'm diving deep into the world of algorithms and data structures, I'm also
+                        fueling my fascination with building things by learning Full Stack Development on the side. I'm
+                        particularly interested in HTML, CSS, JS, and Flutter mobile App development.
+                    </p>
+                    <p>
+                        When I'm not coding, I enjoy playing hockey, going out for a run, going to the gym, and watching
+                        a good TV series on Netflix. I believe a well-rounded life fuels creativity and problem-solving,
+                        which are essential in the tech world!
+                    </p>
+                    <p>
+                        Last year I took on a scholarship project, where I developed a Wellbeing App focused on
+                        measuring student wellbeing. This project explored the intersection of technology and people,
+                        and it was incredibly rewarding to see it in use, and to see its impact on the people around me.
+                    </p>
+                </div>
+                <div class="images">
+                    <img class="run" src="media/run.jpeg" alt="Me out on a run" />
+                    <img class="roadtrip" src="media/roadtrip.jpg" alt="Me on a roadtrip" />
+                </div>
             </div>
         </div>
-        <!-- Skills -->
-        <div id="skills">
-            <h2>Skills</h2>
+
+        <div class="projects">
+            <h1 id="projects">Projects</h1>
+            <div class="info">
+                <div class="text">
+                    <p>
+                        A Wellbeing App - <a href="https://1drv.ms/b/s!AoGoTpIRm0FIuRxGvLJeSpr1T-Pw?e=tfF0FW">[PDF]</a>
+                    </p>
+                    <ul>
+                        <li>This app focused on measuring a students wellbeing based on subjective parameters.</li>
+                        <li>
+                            A teacher would then use this information to gauge a students wellbeing and use this
+                            information in future conversation. This makes talking about ones wellbeing easier.
+                        </li>
+                    </ul>
+                    <p>Spotify Client - <a href="https://github.com/WilliamM163/spotify-client">[GITHUB]</a></p>
+                    <ul>
+                        <li>This was a react app focused on being a simple music player.</li>
+                        <li>Features included were, searching, creating and view playlists, and playing music.</li>
+                    </ul>
+                    <p>
+                        Some images are to the side to give an example of what the apps navigation looked like.
+                    </p>
+                </div>
+                <div class="images">
+                    <img src="media/spotify_client.png" alt="spotify client" />
+                    <img src="media/wellbeing_app.png" alt="wellbeing app" />
+                </div>
+            </div>
+        </div>
+
+        <div class="skills">
+            <h1 id="skills">Skills</h1>
+            <div class="info">
+                <div class="text">
+                    <p>I have exprerience in the following technologies:</p>
+                    <ol>
+                        <li>Figma - Graphic Designing Mobile and Desktop Interfaces</li>
+                        <li>React - Building Responsive Web Interfaces</li>
+                        <li>Redux - Dealing with complex state in React Applications</li>
+                        <li>HTML, CSS, JS - Building basic websites</li>
+                    </ol>
+                </div>
+                <div class="images">
+                    <img src="./media/logos/Rectangle 30.png" />
+                    <img src="./media/logos/Rectangle 31.png" />
+                    <img src="./media/logos/Rectangle 32.png" />
+                    <img src="./media/logos/Rectangle 33.png" />
+                    <img src="./media/logos/Rectangle 34.png" />
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-me">
+            <h1 id="contact-me">Contact Me</h1>
             <ul>
-                <li>
-                    <img src="./media/flutter.png" alt="">
-                    <p>Flutter</p>
-                </li>
-                <li>
-                    <img src="./media/html.png" alt="">
-                    <p>HTML</p>
-                </li>
-                <li>
-                    <img src="./media/css.png" alt="">
-                    <p>CSS</p>
-                </li>
-                <li>
-                    <img src="./media/js.png" alt="">
-                    <p>JS</p>
-                </li>
+                <li>Email - <a href="mailto:william.massey.163@gmail.com">william.massey.163@gmail.com</a></li>
+                <li>Instagram - <a href="https://www.instagram.com/williamm_1603/">williamm_1603</a></li>
+                <li>Github - <a href="https://github.com/WilliamM163">WilliamM163</a></li>
             </ul>
         </div>
-
     </main>
-    <script src="./main.js"></script>
 </body>
 
 </html>

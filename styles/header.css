@@ -1,0 +1,36 @@
+header {
+    grid-area: 1 / 1 / 2 / 13;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.profile {
+    display: flex;
+    align-content: center;
+}
+
+.profile .pic {
+    width: 75px;
+    height: 75px;
+    border-radius: 100%;
+}
+
+.profile .name {
+    padding-left: 10px;
+    padding-top: 14px;
+}
+
+.profile h1 {
+    padding-left: 10px;
+}
+
+.navigation {
+    display: flex;
+    align-content: center;
+}
+
+.navigation a {
+    padding-left: 1em;
+}
