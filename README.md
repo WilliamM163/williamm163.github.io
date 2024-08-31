@@ -2,4 +2,4 @@
 
 TODO:
 - [x] Build Desktop Site
-- [ ] Make the design responsive
+- [x] Make the design responsive
