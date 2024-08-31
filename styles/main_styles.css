@@ -1,11 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Cantarell:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
-
-
-
 body {
     max-width: 1080px;
-    margin: 0 auto;
+    margin: 5px auto;
+    padding: 0 1em;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-gap: 1em;

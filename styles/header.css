@@ -2,6 +2,7 @@ header {
     grid-area: 1 / 1 / 2 / 13;
     height: 100px;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
 }
@@ -29,6 +30,7 @@ header {
 .navigation {
     display: flex;
     align-content: center;
+    width: fit-content;
 }
 
 .navigation a {

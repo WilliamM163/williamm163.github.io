@@ -1,0 +1,122 @@
+@media screen and (max-width: 1024px) { /* Styles for mobile devices */
+    main {
+        grid-area: 2 / 1 / 3 / 13;
+    }
+    
+    /* GENERAL RULES */
+    .text {
+        grid-area: 1 / 1 / 2 / 2;
+    }
+    
+    .images {
+        grid-area: 1 / 2 / 2 / 3;
+    }
+    
+    .images {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    
+    /* ABOUT ME IMAGE SECTION */
+    .aboutme .images {
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+    
+    .aboutme img {
+        border-radius: 15px;
+    }
+    
+    
+    /* PROJECTS IMAGE SECTION */
+    .projects img {
+        height: 300px;
+        border-radius: 5px;
+    }
+    
+    
+    /* SKILLS IMAGE SECTION */
+    .skills img {
+        width: 80px;
+        object-fit: contain;
+    }
+}
+
+@media screen and (min-width: 1024px) { /* Styles for desktops */
+    main {
+        grid-area: 2 / 1 / 3 / 13;
+    }
+    
+    /* GENERAL RULES */
+    .info {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .text {
+        grid-area: 1 / 1 / 2 / 2;
+    }
+    
+    .images {
+        grid-area: 1 / 2 / 2 / 3;
+    }
+    
+    /* ABOUT ME IMAGE SECTION */
+    .aboutme .images {
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+    
+    .aboutme img {
+        border-radius: 15px;
+    }
+    
+    .aboutme .info .images {
+        position: relative;
+    }
+    
+    .run {
+        transform: rotate(-30deg);
+        transform-origin: top left;
+        position: absolute;
+        left: 0;
+        /* Calculate the distance to the top of the image */
+        top: calc(sin(30deg) * 258px);
+    }
+    
+    .roadtrip {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translate(0, -50%);
+    }
+    
+    /* PROJECTS IMAGE SECTION */
+    
+    .projects img {
+        height: 300px;
+        border-radius: 5px;
+    }
+    
+    .projects .images {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    
+    /* SKILLS IMAGE SECTION */
+    
+    .skills .images {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    
+    .skills img {
+        width: 80px;
+        object-fit: contain;
+    }
+}
