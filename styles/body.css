@@ -4,21 +4,26 @@
 
 
 body {
-    margin: 0 180px 0 180px;
+    max-width: 1080px;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-gap: 1em;
-
     background-color: #F2F2F2;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
     font-family: "Abril Fatface", serif;
     font-weight: 400;
     font-style: normal;
 }
 
-p, li, a {
+p,
+li,
+a {
     font-family: "Cantarell", sans-serif;
     font-weight: 400;
     font-style: normal;
