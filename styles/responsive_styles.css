@@ -78,8 +78,8 @@
         position: relative;
     }
     
-    .run {
-        transform: rotate(-30deg);
+    .trail {
+        transform: rotate(-20deg);
         transform-origin: top left;
         position: absolute;
         left: 0;
@@ -89,9 +89,9 @@
     
     .roadtrip {
         position: absolute;
-        right: 0;
-        top: 50%;
-        transform: translate(0, -50%);
+        right: 15px;
+        top: 60%;
+        transform: translate(0, -50%) rotate(8deg);
     }
     
     /* PROJECTS IMAGE SECTION */
