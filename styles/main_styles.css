@@ -35,12 +35,13 @@ h1, h2, h3, h4 {
 }
 
 table {
+    margin-top: 5px;
     width: 100%;
     border-collapse: collapse; /* Merges cell borders */
 }
 
 th, td {
-    border: 1px solid #ddd; /* Light gray border */
+    border: 2px solid #ddd; /* Light gray border */
     padding: 8px;
     text-align: left;
 }
@@ -48,4 +49,8 @@ th, td {
 th {
     font-weight: bold;
     background-color: #a4bdda;
+}
+
+td {
+    background-color: #ffffff;
 }
