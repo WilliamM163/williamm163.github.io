@@ -119,4 +119,12 @@
         width: 80px;
         object-fit: contain;
     }
+
+    /*  EDUCATION IMAGE SECTION  */
+
+    .education .images {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
 }
