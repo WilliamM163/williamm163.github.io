@@ -6,18 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>William's Portfolio</title>
     <link rel="icon" type="image/x-icon" href="./media/favicon.png">
-    <link rel="stylesheet" href="./styles/main_styles.css">
-    <link rel="stylesheet" href="./styles/header.css">
-    <link rel="stylesheet" href="./styles/responsive_styles.css">
+    <link rel="stylesheet" href="fonts/fonts.css">
+    <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
     <header>
         <div class="profile" alt="Profile Pic and Name">
-            <img class="pic" src="./media/profile_pic.jpg" />
-            <img class="name" src="./media/name.svg" />
+            <img class="pic" src="./media/images/profile_pic.webp" width="75x" height="75px" />
+            <img class="name" src="./media/images/name.svg" />
         </div>
         <div class="navigation" alt="navigation">
+            <a onclick="alert('Haven\'t completed')">Dark Mode</a>
+            <a onclick="alert('Something William is still working on')">Blog</a>
             <a href="#aboutme">About Me</a>
             <a href="#projects">Projects</a>
             <a href="#skills">Skills</a>
@@ -26,139 +27,169 @@
     </header>
 
     <main>
+        <h1 id="aboutme">About Me</h1>
         <div class="aboutme">
-            <h1 id="aboutme">About Me</h1>
-            <div class="info">
-                <div class="text">
-                    <p>
-                        My name is William Massey, and I'm a passionate Computer Science student at the University of
-                        Auckland. While I'm diving deep into the world of algorithms and data structures, I'm also
-                        fueling my fascination with building things by learning Full Stack Development on the side. I'm
-                        particularly interested in HTML, CSS, JS, and Flutter mobile App development.
-                    </p>
-                    <p>
-                        When I'm not coding, I enjoy playing hockey, going out for a run, going to the gym, and watching
-                        a good TV series on Netflix. I believe a well-rounded life fuels creativity and problem-solving,
-                        which are essential in the tech world!
-                    </p>
-                    <p>
-                        Last year I took on a scholarship project, where I developed a Wellbeing App focused on
-                        measuring student wellbeing. This project explored the intersection of technology and people,
-                        and it was incredibly rewarding to see it in use, and to see its impact on the people around me.
-                    </p>
-                </div>
-                <div class="images">
-                    <img class="trail" src="media/trail.jpg" width="320px" alt="Me out on a run" />
-                    <img class="roadtrip" src="media/roadtrip.jpg" width="258px" alt="Me on a roadtrip" />
+            <div class="text">
+                <p>
+                    My name is William Massey, and I'm a passionate Computer Science student at the University of
+                    Auckland. While I'm diving deep into the world of algorithms and data structures, I'm also
+                    fueling my fascination with building things by learning Full Stack Development on the side. I'm
+                    particularly interested in Web Development.
+                </p>
+                <p>
+                    When I'm not coding, I enjoy going out for a run, going to the gym, and watching
+                    a good TV series on Netflix. I believe a well-rounded life fuels creativity and problem-solving,
+                    which are essential in the tech world!
+                </p>
+                <p>
+                    Over the past few years, I've been upskilling my developer skills. I've completed a Full Stack
+                    Engineering Course on Codecademy, and through my volunteer work on their social platform, I
+                    employed my knowledge to empower fellow learners as a Codecademy Club Captain, guiding them
+                    through their coding journeys.
+                </p>
+            </div>
+            <div class="images">
+                <div class="columns">
+                    <img class="photo" src="media/images/trail.webp" width="150px" alt="Me out on a run" />
+                    <img class="photo" src="media/images/roadtrip.webp" width="150px" alt="Me on a roadtrip" />
+                    <img class="photo" src="media/images/run.webp" width="150px" alt="Me doing an 8k with my sister" />
+                    <img class="photo" src="media/images/concert.webp" width="150px"
+                        alt="Me at a concert with some friends" />
+                    <img class="photo" src="media/images/croffles.webp" width="150px"
+                        alt="Eating some delicious desert with friends after a long exam" />
+                    <img class="photo" src="media/images/cute_plush.webp" width="150px"
+                        alt="I was looking around in Newmarket Mall and thought my sister might like this" />
+                    <img class="photo" src="media/images/cool_building.webp" width="150px"
+                        alt="Cool Building Somewhere in London" />
+                    <img class="photo" src="media/images/concert_2.webp" width="150px" alt="At the Tate Mcrae Concert" />
+                    <img class="photo" src="media/images/the_gradens.webp" width="150px" alt="A walk through the park" />
                 </div>
             </div>
         </div>
 
+        <h1 id="projects">Projects</h1>
         <div class="projects">
-            <h1 id="projects">Projects</h1>
-            <div class="info">
+            <div class="project">
                 <div class="text">
                     <p>
-                        A Wellbeing App - <a href="https://1drv.ms/b/s!AoGoTpIRm0FIuRxGvLJeSpr1T-Pw?e=tfF0FW">[PDF]</a>
+                        <b>Chrome Homescreen -</b> <a
+                            href="https://github.com/WilliamM163/chrome_homescreen">[GITHUB]</a>
                     </p>
                     <ul>
-                        <li>This app focused on measuring a students wellbeing based on subjective parameters.</li>
-                        <li>
-                            A teacher would then use this information to gauge a students wellbeing and use this
-                            information in future conversation. This makes talking about ones wellbeing easier.
+                        <li>A chrome extension designed to transform your new tab page into a study hub</li>
+                        <li> It is customizable, and it helps you stay focused and motivated and displaying essential
+                            study tools</li>
+                        <li>Tools Used: HTML, CSS, JS, ReactJS, Redux, LocalStorage API</li>
+                    </ul>
+                </div>
+                <img class="product" src="media/images/chrome_homescreen.webp" width="500px"
+                    alt="Screenshot of Chrome Homescreen Application" />
+            </div>
+            <div class="project">
+                <div class="text">
+                    <p>
+                        <b>Fun Login -</b> <a href="https://github.com/WilliamM163/fun_login">[GITHUB]</a>
+                    </p>
+                    <ul>
+                        <li>Instead of relying on traditional passwords, users authenticate by solving a unique,
+                            randomly
+                            generated snake game puzzle</li>
+                        <li> The specific sequence of moves a user takes to complete the game becomes their "password."
                         </li>
+                        <li>Tools Used: ReactJS, NodeJS, ExpressJS, PostgreSQL</li>
                     </ul>
-                    <p>Spotify Client - <a href="https://github.com/WilliamM163/spotify-client">[GITHUB]</a></p>
-                    <ul>
-                        <li>This was a react app focused on being a simple music player.</li>
-                        <li>Features included were, searching, creating and view playlists, and playing music.</li>
-                    </ul>
-                    <p>
-                        Some images are to the side to give an example of what the apps navigation looked like.
-                    </p>
                 </div>
-                <div class="images">
-                    <img src="media/spotify_client.png" height="300px" alt="spotify client" />
-                    <img src="media/wellbeing_app.png" height="300px" alt="wellbeing app" />
-                </div>
+                <img class="product" src="media/images/fun_login.webp" width="500px"
+                    alt="Screenshot of Fun Login Application" />
             </div>
         </div>
 
+        <h1 id="skills">Skills</h1>
         <div class="skills">
-            <h1 id="skills">Skills</h1>
-            <div class="info">
-                <div class="text">
-                    <p>I have experience in the following technologies:</p>
-                    <ol>
-                        <li>Figma - Graphic Designing Mobile and Desktop Interfaces</li>
-                        <li>React - Building Responsive Web Interfaces</li>
-                        <li>Redux - Dealing with complex state in React Applications</li>
-                        <li>HTML, CSS, JS - Building basic websites</li>
-                    </ol>
-                </div>
-                <div class="images">
-                    <img src="./media/logos/Rectangle 30.png" />
-                    <img src="./media/logos/Rectangle 31.png" />
-                    <img src="./media/logos/Rectangle 32.png" />
-                    <img src="./media/logos/Rectangle 33.png" />
-                    <img src="./media/logos/Rectangle 34.png" />
-                </div>
+            <div class="text">
+                <p>I have experience in the following technologies:</p>
+                <ol>
+                    <li>Figma - Graphic Designing Mobile and Desktop Interfaces</li>
+                    <li>React - Building Responsive Web Interfaces</li>
+                    <li>Redux - Dealing with complex state in React Applications</li>
+                    <li>HTML, CSS, JS - Building websites</li>
+                    <li>Node, and ExpressJS - Building Server Applications</li>
+                    <li>Java, and Python - Programming Languages</li>
+                </ol>
+            </div>
+
+            <div class="logos">
+                <img src="media/logos/CSS.png" alt="CSS Logo" />
+                <img src="media/logos/Figma.png" alt="Figma Logo" />
+                <img src="media/logos/Flutter.png" alt="Flutter Logo" />
+                <img src="media/logos/HTML.png" alt="HTML Logo" />
+                <img src="media/logos/Java.png" alt="Java Logo" />
+                <img src="media/logos/Javascript.png" alt="Javascript Logo" />
+                <img src="media/logos/NodeJS.png" alt="NodeJS Logo" />
+                <img src="media/logos/Python.png" alt="Python Logo" />
+                <img src="media/logos/React.png" alt="React Logo" />
+                <img src="media/logos/Redux.png" alt="Redux Logo" />
             </div>
         </div>
 
+        <h1 id="education">Education</h1>
         <div class="education">
-            <h1 id="education">Education</h1>
-            <div class="info">
-                <div class="text">
-                    <p>
-                        I'm a web developer with a passion for building engaging online experiences.
-                        My first year of university has been fantastic, earning top marks in my coding
-                        courses while continually pushing myself to learn the latest technologies on Codecademy.
-                        I thrive on challenges and am always eager to expand my skills.
-                    </p>
-                    <b>Some notable achievements:</b>
-                    <table>
-                        <tr>
-                            <th colspan="2">Course Code & Name</th>
-                            <th>Grade</th>
-                        </tr>
-                        <tr>
-                            <td>CS 101</td>
-                            <td>Principles of Programming</td>
-                            <td>A+</td>
-                        </tr>
-                        <tr>
-                            <td>CS 110</td>
-                            <td>Introduction to Computer Systems</td>
-                            <td>A</td>
-                        </tr>
-                        <tr>
-                            <td>CS 120</td>
-                            <td>Mathematics for Computer Science</td>
-                            <td>A</td>
-                        </tr>
-                        <tr>
-                            <td>CS 130</td>
-                            <td>Introduction to Software Fundamentals</td>
-                            <td>A+</td>
-                        </tr>
-                    </table>
-                </div>
-                <div class="images">
-                    <img src="./media/codecademy_courses.png" alt="Courses I have taken" width="350px">
-                </div>
-            </div>
+            <p>
+                I'm a web developer with a passion for building engaging online experiences.
+                My first year of university has been fantastic, earning top marks in my coding
+                courses while continually pushing myself to learn the latest technologies on Codecademy.
+                I thrive on challenges and am always eager to expand my skills.
+            </p>
+            <p>My Codecademy Profile: <a href="https://www.codecademy.com/profiles/williamm_1603">williamm_1603</a></p>
+            <b>Some notable achievements:</b>
+            <table>
+                <tr>
+                    <th colspan="2">Course Code & Name</th>
+                    <th>Grade</th>
+                </tr>
+                <tr>
+                    <td>CS 101</td>
+                    <td>Principles of Programming</td>
+                    <td>A+</td>
+                </tr>
+                <tr>
+                    <td>CS 110</td>
+                    <td>Introduction to Computer Systems</td>
+                    <td>A</td>
+                </tr>
+                <tr>
+                    <td>CS 120</td>
+                    <td>Mathematics for Computer Science</td>
+                    <td>A</td>
+                </tr>
+                <tr>
+                    <td>CS 130</td>
+                    <td>Introduction to Software Fundamentals</td>
+                    <td>A+</td>
+                </tr>
+                <tr>
+                    <td>CS 230</td>
+                    <td>Object Oriented Software Development</td>
+                    <td>A+</td>
+                </tr>
+            </table>
+
         </div>
 
+        <h1 id="contact-me">Contact Me</h1>
         <div class="contact-me">
-            <h1 id="contact-me">Contact Me</h1>
-            <ul>
-                <li>LinkedIn - <a href="https://www.linkedin.com/in/william-massey-21504826b/">william-massey-21504826b</a></li>
-                <li>Codecademy - <a href="https://www.codecademy.com/profiles/williamm_1603">williamm_1603</a></li>
-                <li>Email - <a href="mailto:william.massey.163@gmail.com">william.massey.163@gmail.com</a></li>
-                <li>Instagram - <a href="https://www.instagram.com/williamm_1603/">williamm_1603</a></li>
-                <li>Github - <a href="https://github.com/WilliamM163">WilliamM163</a></li>
-            </ul>
+            <div class="downloads">
+                <a href="media/files/CV Web Copy.pdf">Download CV</a>
+                <a href="media/files/Academic Transcript.pdf">Download Academic Transcript</a>
+            </div>
+            <div class="email">
+                <a href="mailto:william.massey.163@gmail.com">Email Me</a>
+            </div>
+            <div class="socials">
+                <a href="www.codecademy.com/profiles/williamm_1603">Codecademy</a>
+                <a href="www.linkedin.com/in/william-massey-21504826b/">LinkedIn</a>
+                <a href="github.com/WilliamM163">Github</a>
+            </div>
         </div>
     </main>
 </body>

@@ -1,0 +1,21 @@
+@font-face {
+    font-family: 'Abril Fatface';
+    src: url('./AbrilFatface-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Cantarell';
+    src: url('./Cantarell-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Cantarell Bold';
+    src: url('./Cantarell-Bold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Cantarell Italic';
+    src: url('./Cantarell-Italic.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Cantarell Bold Italic';
+    src: url('./Cantarell-BoldItalic.ttf') format('truetype');
+}

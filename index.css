@@ -1,0 +1,217 @@
+/* VARIABLES */
+:root {
+    --color: #2B404A;
+    --background-color: #F2F2F2;
+    --font-size: 16px;
+
+    /* Font Family's */
+    --headers: 'Abril Fatface';
+    --default: 'Cantarell';
+    --bold: 'Cantarell Bold';
+}
+
+/* UNIVERSAL STYLES */
+body {
+    max-width: 1000px;
+    margin: 10px auto;
+    padding: 0 20px;
+    font-family: var(--default);
+    color: var(--color);
+    background-color: var(--background-color);
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: var(--headers);
+}
+b {
+    font-family: var(--bold);
+    font-weight: bold;
+}
+.navigation a {
+    text-decoration: none;
+    color: var(--default);
+}
+
+/* HEADER */
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.profile {
+    display: flex;
+    width: 460px;
+}
+.profile .pic {
+    border-radius: 50%;
+}
+.profile .name {
+    padding-top: 10px;
+    padding-left: 10px;
+}
+.navigation {
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ABOUT ME */
+.aboutme {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+}
+.aboutme .text {
+    width: 500px;
+}
+.images {
+    width: 460px;
+    height: 400px;
+    overflow: scroll;
+
+}
+.columns {
+    width: 460px;
+    column-gap: 5px;
+    column-count: 3;
+}
+.columns > * {
+    border-radius: 10px;
+    width: 150px;
+}
+
+/* PROJECTS */
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.projects .project {
+    width: 480px;
+    display: grid;
+}
+.project .product {
+    width: 100%;
+}
+
+/* SKILLS */
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.skills .logos {
+    display: grid;
+    grid-template-columns: repeat(5, 80px);
+    grid-template-rows: 80px 80px;
+    width: 480px;
+    gap: 5px;
+    justify-content: center;
+    align-content: center;
+}
+.skills .logos img {
+    width: 80px;
+    height: 80px;
+}
+
+/* EDUCATION */
+table {
+    margin-top: 5px;
+    width: 100%;
+    border-collapse: collapse; /* Merges cell borders */
+}
+
+th, td {
+    border: 2px solid #ddd; /* Light gray border */
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    font-weight: bold;
+    background-color: #a4bdda;
+}
+
+td {
+    background-color: #ffffff;
+}
+
+/* CONTACT */
+.contact-me {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+}
+.contact-me a {
+    padding: 5px;
+    border-radius: 5px;
+    background-color: rgb(68, 96, 148);
+    color: white;
+    text-decoration: none;
+}
+.contact-me > div {
+    width: 100%;
+    display: flex;
+    gap: 5px;
+}
+.downloads > * {
+    width: 50%;
+    text-align: center;
+    padding: 5px;
+}
+.email > * {
+    width: 100%;
+    text-align: center;
+}
+.socials > * {
+    width: 33%;
+    text-align: center;
+}
+
+
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 999px)  {
+    body {
+        max-width: 600px;
+    }
+    header, .aboutme, .aboutme .text, .product {
+        all: unset;
+    }
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    header .profile {
+        width: unset;
+    }
+    .images {
+        width: 100%;
+        display: grid;
+        justify-content: center;
+    }
+    .projects {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    .projects .project {
+        width: 100%;
+    }
+    .project .product {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .skills .text {
+        width: 100%;
+    }
+    .skills .logos {
+        width: 100%;
+    }
+}
