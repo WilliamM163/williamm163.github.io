@@ -41,18 +41,24 @@ header {
 }
 .profile {
     display: flex;
-    width: 460px;
+    width: min(460px, 100%);
 }
 .profile .pic {
     border-radius: 50%;
+    width: 15%;
+    height: auto;
 }
 .profile .name {
     padding-top: 10px;
     padding-left: 10px;
+    width: 85%;
+    height: auto;
 }
 .navigation {
-    width: 500px;
+    width: min(500px, 100%);
     display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
     justify-content: space-between;
 }
 
@@ -70,16 +76,44 @@ header {
     width: 460px;
     height: 400px;
     overflow: scroll;
-
 }
 .columns {
     width: 460px;
     column-gap: 5px;
     column-count: 3;
 }
-.columns > * {
+.columns > .image {
     border-radius: 10px;
-    width: 150px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 5px;
+}
+
+.photo {
+    display: block;
+    height: auto;
+    transition-property: filter, transform;
+    transition-duration: 0.5s;
+}
+.image:hover > .photo {
+    filter: blur(4px) brightness(75%);
+    transform: scale(104%);
+}
+
+.image > p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+
+    opacity: 0;
+    color: white;
+    width: 80%;
+    transition-property: opacity;
+    transition-duration: 0.5s;
+}
+.image:hover > p {
+    opacity: 1;
 }
 
 /* PROJECTS */
@@ -101,14 +135,14 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
     width: 100%;
 }
 
 .skills .logos {
     display: grid;
-    grid-template-columns: repeat(5, 80px);
-    grid-template-rows: 80px 80px;
-    width: 480px;
+    grid-template-columns: repeat(auto-fill, 80px);
+    width: min(480px, 100%);
     gap: 5px;
     justify-content: center;
     align-content: center;
@@ -186,6 +220,7 @@ td {
     header {
         display: flex;
         flex-direction: column;
+        gap: 5px;
         align-items: center;
     }
     header .profile {
@@ -193,6 +228,7 @@ td {
     }
     .images {
         width: 100%;
+        height: fit-content;
         display: grid;
         justify-content: center;
     }
@@ -207,11 +243,17 @@ td {
         max-width: 500px;
         margin: 0 auto;
     }
-
+    .skills .logos {
+        margin: 0 auto;
+    }
     .skills .text {
         width: 100%;
     }
-    .skills .logos {
-        width: 100%;
+}
+
+@media (max-width: 499px) {
+    .images .columns {
+        column-count: 2;
+        width: 305px;
     }
 }
