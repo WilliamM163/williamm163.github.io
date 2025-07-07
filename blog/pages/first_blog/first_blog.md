@@ -29,5 +29,20 @@ It's been a fun challenge to connect these pieces, and it truly gives me more co
 ## Styling with CSS
 Finally, to bring the blog to life visually, I've used standard CSS. This allows me to define the fonts, colors, layouts, and responsiveness, ensuring a consistent and pleasant reading experience across different devices.
 
+## Things I learn't along the way
+Building this blog, particularly while developing my JavaScript programs (both the Markdown converter and the static site generator), has been a fantastic learning experience. One of the most impactful discoveries I made was the power of JSDoc.
+
+### Discovering JSDoc
+<img src="./media/js_doc.png" alt="Example of Using JSDoc" style="max-width: 100%; border-radius: 15px;">
+I had actually come across JSDoc comments in various codebases before, but I never fully understood their purpose or how to use them effectively. It turns out, JSDoc is massively helpful for documentation!
+
+In my personal coding style, I tend to write JavaScript using a more functional paradigm, rather than a strictly object-oriented one. Even within this style, JSDoc proves incredibly beneficial.
+
+What I've found particularly useful is how JSDoc helps my code editor (like VS Code, for example) provide **intelligent auto-suggestions** for function input types. By clearly defining the expected parameters and their types using JSDoc tags (e.g., `@param {string} name`), the editor can offer real-time hints as I type function calls. This significantly reduces errors and improves coding speed.
+
+Furthermore, when hovering over a function call in the editor, JSDoc provides a handy little snippet that explains what the function does and what its inputs and outputs are. This immediate context is invaluable, especially when returning to code after a break or when collaborating with others. It's like having inline documentation always available right where you need it.
+
+JSDoc has truly elevated the clarity and maintainability of my JavaScript projects
+
 ---
 This blog is a testament to learning by doing, embracing challenges, and leveraging existing tools when necessary to achieve a goal. I'm excited to share more of my thoughts and projects here. Thanks for reading!
