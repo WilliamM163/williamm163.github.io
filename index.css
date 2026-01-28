@@ -3,16 +3,40 @@
 
 /* VARIABLES */
 :root {
+    /* Default Light Mode colors */
+    --header-color: #2B404A;
     --color: #2B404A;
     --background-color: #F2F2F2;
-    --font-size: 16px;
+    --overlay-background-color: rgba(0, 0, 0, 0.8);
+    --card-bg: #ffffff;
+    --table-header: #a4bdda;
+    --border-color: #ddd;
+    --link-color: #446094;
 
     /* Font Family's */
     --headers: 'Abril Fatface';
     --default: 'Cantarell';
 }
 
+/* Dark Mode Overrides */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --header-color: #e0e0e0;
+        --color: #C0C0C0;
+        --background-color: #1A1A1A;
+        --overlay-background-color: rgba(40, 40, 40, 0.8);
+        --card-bg: #2D2D2D;
+        --table-header: #3D5A80;
+        --border-color: #444;
+        --link-color: #5f7faa;
+    }
+    .profile .name {
+        filter: invert(100%);
+    }
+}
+
 /* UNIVERSAL STYLES */
+html { scroll-behavior: smooth;}
 body {
     max-width: 1000px;
     margin: 10px auto;
@@ -21,17 +45,36 @@ body {
     color: var(--color);
     background-color: var(--background-color);
 }
-
 h1, h2, h3, h4, h5 {
+    color: var(--header-color);
     font-family: var(--headers);
 }
 b {
     font-family: var(--default);
     font-weight: bold;
 }
-.navigation a {
+a {
     text-decoration: none;
-    color: var(--default);
+    color: var(--link-color);
+}
+img {
+    user-select: none;
+}
+button {
+    font-family: var(--default);
+    font-weight: bold;
+    background-color: #F2F2F2;
+    color: #2B404A;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.25s;
+}
+button:hover {
+    background-color: #e0e0e0;
+}
+button:active {
+    background-color: #C0C0C0;
 }
 
 /* HEADER */
@@ -56,12 +99,9 @@ header {
     width: 85%;
     height: auto;
 }
-.navigation {
-    width: min(500px, 100%);
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: space-between;
+.navigation a {
+    margin-left: 10px;
+    color: var(--color);
 }
 
 /* ABOUT ME */
@@ -89,8 +129,11 @@ header {
     overflow: hidden;
     position: relative;
     margin-bottom: 5px;
+    cursor: pointer;
 }
-
+.image > p {
+    user-select: none;
+}
 .photo {
     display: block;
     height: auto;
@@ -160,20 +203,17 @@ table {
     width: 100%;
     border-collapse: collapse; /* Merges cell borders */
 }
-
 th, td {
-    border: 2px solid #ddd; /* Light gray border */
+    border: 2px solid var(--border-color); /* Light gray border */
     padding: 8px;
     text-align: left;
 }
-
 th {
     font-weight: bold;
-    background-color: #a4bdda;
+    background-color: var(--table-header);
 }
-
 td {
-    background-color: #ffffff;
+    background-color: var(--card-bg);
 }
 
 /* CONTACT */
@@ -186,7 +226,7 @@ td {
 .contact-me a {
     padding: 5px;
     border-radius: 5px;
-    background-color: rgb(68, 96, 148);
+    background-color: var(--link-color);
     color: white;
     text-decoration: none;
 }
@@ -209,6 +249,69 @@ td {
     text-align: center;
 }
 
+/* IMAGE VIEWER */
+#image-viewer-overlay { 
+    /* Positioning */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+
+    /* Box Sizing */
+    height: calc(100vh - 40px);
+    width: calc(100% - 40px);
+    padding: 20px;
+
+    /* Background Color */
+    background-color: var(--overlay-background-color);
+    backdrop-filter: blur(4px);
+
+    /* Flex */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+
+    /* Disable scrolling */
+    overscroll-behavior: contain;
+}
+#image-viewer-overlay > .exit {
+    align-self: baseline;
+}
+#image-viewer-overlay > .content > img {
+    max-height: 70vh;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+    display: block;
+}
+#image-viewer-overlay > .content > .description {
+    /* Box Sizing */
+    width: calc(100% - 2em);
+    margin: 0;
+    padding: 1em;
+    border-radius: 0 0 20px 20px;
+
+    /* Alignment */
+    text-align: center;
+
+    /* Color */
+    background-color: white;
+    color: #1A1A1A;
+}
+#image-viewer-overlay .nav {
+    display: flex;
+    place-items: center;
+    gap: 4em;
+}
+#image-viewer-overlay .nav > button {
+    height: fit-content;
+    padding: 5px 10px;
+}
+#image-viewer-overlay .nav > .img-num {
+    color: white;
+}
 
 
 /* RESPONSIVE DESIGN */
